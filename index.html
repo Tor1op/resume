@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, resume">
+    <meta name="description" content="Учусь верстать">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="main">
+            <div class="main_img"></div>
+            <div class="main_name">
+                <p>Меня зовут Михаил</p>
+            </div>
+            <div class="main_about">
+                <p>Я начинающий frontend-разработчик.<br/>
+                    На этой странице вы сможете ознакомиться с информацией обо мне.</p>
+            </div>
+            <div class="main_btn">
+             <a href="#menu">Дальше</a>
+            </div>
+            <div class="arr">
+                <a href="#menu"><img src="./img/arrow.svg"></a>
+            </div>
+    
+        </div>
+        <div class="menu" id="menu">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#menu">Обо мне</a></li>
+                    <li><a href="#exp">Опыт работы</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+                <div class="content_about">
+                    <div class="content_logo">
+                        <h2>Обо мне</h2>
+                    </div>
+                    <div class="content_about_list">
+                        <ul>
+                            <li><strong>Имя:</strong> Михаил Ишин</li>
+                            <li><strong>Возраст:</strong> 28 лет</li>
+                            <li><strong>Город:</strong> Симферополь</li>
+                            <li><strong>Образование:</strong> Неоконченное высшее. "Юриспруденция"</li>
+                        </ul>
+                    </div>
+                    <div class="content_form">
+                        <h3>Форма для связи</h3>
+                        <form class="modal">
+                            <input name="name" placeholder="Укажите ваше имя:" class="name" required />
+                            <input name="emailaddress" placeholder="Укажите ваш Email:" class="email" type="email" required />
+                            <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
+                            <input name="submit" class="btn" type="submit" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+                <div class="content_exp" id="exp">
+                    <div class="content_logo">
+                        <h2>Опыт работы</h2>
+                    </div>
+                    <div class="content_exp_table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Название</th>
+                                    <th>Приём - увольнение</th>
+                                    <th>Должность</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ООО Ре Трейдинг<br/>"Reserved"</td>
+                                    <td>2016 - 2019 гг.</td>
+                                    <td>Администратор</td>
+                                </tr>
+                                <tr>
+                                    <td>ООО Ганар<br/>"Brandsmart"</td>
+                                    <td>2020 - 2021 гг.</td>
+                                    <td>Администратор</td>
+                                </tr>
+                                <tr>
+                                    <td>ООО Книжный Мегаполис<br/>"Читай-город"</td>
+                                    <td>2022 г. - н. в.</td>
+                                    <td>Старший продавец</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content_portfolio" id="portfolio">
+                    <div class="content_logo">
+                        <h2>Портфолио</h2>
+                    </div>
+                        <div class="portfolio_container">
+                            <div class="content_portfolio_items">
+                                <a href="#" class="portfolio_item"><img src="#" alt="Здесь пока пусто :("></a>
+                            </div>
+                            <div class="content_portfolio_items">
+                                <a href="#" class="portfolio_item"><img src="#" alt="Здесь пока пусто :("></a>
+                            </div>
+                            <div class="content_portfolio_items">
+                                <a href="#" class="portfolio_item"><img src="#" alt="Здесь пока пусто :("></a>
+                            </div>
+                            <div class="content_portfolio_items">
+                                <a href="#" class="portfolio_item"><img src="#" alt="Здесь пока пусто :("></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="content_skills" id="skills">
+                    <div class="content_logo skill">
+                        <h2>Навыки</h2>
+                    </div>
+                    <p><img src="./img/html.png" class="img_html" alt="HTML"></p>
+                    <div class="container_skills">
+                        <div class="skills html">50%</div>
+                    </div>
+                    <p><img src="./img/css.png" class="img_css" alt="CSS"></p>
+                    <div class="container_skills">
+                        <div class="skills css">30%</div>
+                    </div>
+                    <p><img src="./img/js.png" class="img_js" alt="JavaScript"></p>
+                    <div class="container_skills">
+                        <div class="skills js">10%</div>
+                    </div>
+                </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <script src="./libs/PageScroll2id.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+</html>
